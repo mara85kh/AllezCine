@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    border: 2px solid black;
+    section{
+        height: 300px;
+    }
+    .gris{
+        background-color: lightgrey;
+        .movieGenre{
+            background-color: gray;
+            width: 5em;
+            display: none;
+        }
+        .trailer{
+            background-color: grey;
+        }
+    }
+    ul{
+        list-style-type: none;
+        margin-left: 25%;
+    }
+    li{
+        border: 1px solid yellow;
+        padding: 1em;
+        float: left;
+    }
+}
