@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Movie App</title>
 </head>
 <body>
     <header>
-        <form id="form">
-            <input type="text" placeholder="Search" id="search" class="search">
-        </form>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-camera-movie"></i>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-xmark fermer"></i>
+            </div>
+            <div>
+            <ul class="menu">
+                <li>
+                    <!-- <form id="form">
+                        <input type="text" placeholder="Search" id="search" class="search">
+                    </form>
+                </li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="btn">Inscription</button></li>
+                <li><button class="btn btn-secondary">Connexion</button></li>
+            </ul>
+        </div>
+        </nav>
+
     </header>   
 
     <main id="main">
@@ -34,6 +57,6 @@
         <div class="overview">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis hic consequatur fugit dolore dolores reiciendis libero iste illum corporis ut sequi sint numquam impedit, voluptatem quidem expedita vitae repellat nobis?
         </div>
-        <script type="text/javascript" src="/assets/js/app.js"></script>   
+        <script type="text/javascript" src="/assets/js/js.js"></script>   
 </body>
 </html>
