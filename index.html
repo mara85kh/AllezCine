@@ -6,10 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/sass/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>AllezCiné</title>
 </head>
 
 <body>
+    <header>
+        <!-- Menu Burger -->
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-xmark fermer"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="bouton">Inscription</button></li>
+                <li><button class="bouton btn-secondary">Connexion</button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
     <!-- Je mets des noms de classe en attendant le css de bulma-->
     <section class="gris">
         <!-- Ne pas oublier de mettre un lien pour l'image ou de mettre l'image en background-->
@@ -23,7 +47,7 @@
             <button class="trailer">Play trailer</button>
         </div>
         <div class="nextSlide">
-            <!-- Ce sont les différents btn pour slide le film-->
+            <!-- Ce sont les différents btn pour slide le film -->
             <ul>
                 <li>a </li>
                 <li>b</li>
@@ -53,6 +77,7 @@
         <button class="bouton4">Contact us</button>
     </section>
     <section></section>
+
 
     <script src="assets/js/app.js"></script>
 </body>
