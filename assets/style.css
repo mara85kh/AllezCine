@@ -98,6 +98,11 @@ ul {
   line-height: 50px;
 }
 
+.gras {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 :root {
   --primary-color: #3d5e68;
   --secondary-color: #53808d;
