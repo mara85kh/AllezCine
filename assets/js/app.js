@@ -58,7 +58,6 @@ function carouselle(data) {
     //Description du film
     document.getElementsByClassName("description")[0].innerHTML = data[0].overview
     //Genre du film
-    // qsdfghjkqsdfghjhgfdqsdfghjklkjhgfdsdfghgf
     movie_genre = data[0].genre_ids
     //ID du film pour trailer
     movie_id = data[0].id
