@@ -330,3 +330,16 @@ main {
   opacity: 1;
   transition: all 0.3 ease;
 }
+/*right: 0;
+    bottom: 0;
+    background-color: #fff ;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    opacity: 0.8;
+}
+/* .movie:hover .overview{
+    transform: translateY(0);
+    opacity: 0.8;
+} */
