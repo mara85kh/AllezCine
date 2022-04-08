@@ -25,6 +25,13 @@ nav {
 
 .logo {
   display: flex;
+  filter: invert(51%) sepia(65%) saturate(3287%) hue-rotate(323deg)
+    brightness(92%) contrast(115%);
+}
+
+i {
+  width: 30px;
+  height: 30px;
 }
 
 .recherche {
@@ -263,12 +270,11 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: #53808d;
   padding: 1rem;
   max-height: 100%;
   transform: translateY(101%);
   transition: transform 0.3s ease-in;
-  opacity: 0.8;
 }
 
 /* caroussel */
@@ -329,9 +335,32 @@ main {
   transition: all 0.3 ease;
 }
 
+.btnClose {
+  background-color: #3d5e68;
+  color: #fa5457;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #fa5457;
+  width: 30px;
+  height: 30px;
+}
 
-btnClose
+.trailer {
+  background-color: #3d5e68;
+  color: #fa5457;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #fa5457;
+  width: 50px;
+  height: 30px;
+}
 
-trailer
-
-btnInfo
+.btnInfo {
+  background-color: #3d5e68;
+  color: #fa5457;
+  border-radius: 5px;
+  border: 1px solid #fa5457;
+  border: none;
+  width: 30px;
+  height: 30px;
+}

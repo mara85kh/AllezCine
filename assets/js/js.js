@@ -136,7 +136,7 @@ function showMovies(data) {
             
             <div class="movie-info">
                 <h3>${title}</h3>
-                <button class="btnInfo ${a}">?</button>
+                <button class="btnInfo ${a}">Info</button>
                 <span class="${getColor(vote_average)}">${vote_average}</span>
             </div>
 
