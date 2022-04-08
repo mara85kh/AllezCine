@@ -1,3 +1,4 @@
+//Menu Burger
 let toggle = document.querySelector(".toggle");
 let body = document.querySelector("body");
 
@@ -16,6 +17,59 @@ const form = document.getElementById("form");
 const search = document.getElementById("search");
 getMovies(API_URL);
 
+//caroussel
+document.body.onload = function () {
+  nbr = 5;
+  p = 0;
+  container = document.getElementById("container");
+  console.log(container);
+  g = document.getElementById("g");
+  console.log(g);
+  d = document.getElementById("d");
+  console.log(d);
+  container.style.width = 800 * nbr + "px";
+  for (i = 1; i <= nbr; i++) {
+    img = document.createElement("img");
+    img.className = "photo";
+    img.src = "im" + i + ".jpg";
+    img.style.width = "800px";
+    container.appendChild(img);
+    console.log(container.appendChild(img));
+  }
+  afficherMasquer();
+};
+g.onclick = function () {
+  if (p > -nbr + 1) {
+    p--;
+    container.style.transform = "translate(800px)";
+    container.style.transition = "all 0.5s ease";
+  }
+  console.log(p);
+
+  afficherMasquer();
+};
+let x = 1;
+d.onclick = function () {
+  let nb = x * -800;
+  if (p == 5) {
+    afficherMasquer();
+  }
+  p++;
+  x++;
+  container.style.transform = "translate(" + nb + "px)";
+  container.style.transition = "all 0.5s ease";
+  console.log(nb);
+
+  console.log(p);
+};
+function afficherMasquer() {
+  if (p == -nbr + 1) g.style.visibility = "hidden";
+  else g.style.visibility = "visible";
+  if (p == 4) d.style.visibility = "hidden";
+  else d.style.visibility = "visible";
+}
+
+//repertoire de film
 function getMovies(url) {
   fetch(url)
     .then((res) => res.json())
