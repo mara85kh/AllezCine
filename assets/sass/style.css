@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body header {
+  position: absolute;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 2rem;
+}
+
+body nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .logo {
+  font-size: 2rem;
+}
+
+body .toggle {
+  display: none;
+  color: white;
+}
+
+body .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 550px;
+}
+
+body .menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+body .bouton {
+  border: 0;
+  background: pink;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+body .bouton btn-secondary {
+  background: transparent;
+  border: 2px solid pink;
+  color: white;
+}
+
+@media screen and (max-width: 7000px) {
+  .toggle {
+    display: block;
+    font-size: 2rem;
+  }
+  .ouvrir {
+    display: block;
+  }
+  .fermer {
+    display: none;
+  }
+  .open .ouvrir {
+    display: none;
+  }
+  .open .fermer {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+/* Code Sara*/
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#carouselheader {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}

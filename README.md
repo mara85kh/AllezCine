@@ -14,7 +14,7 @@ The IT department ask you to create a website that will have to retrieve from an
 
  # Developed in hybrid work mode using #
 
- ![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+ ![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Discord](https://img.shields.io/badge/%3CServer%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)
 
 # Members of the Group #
 
@@ -25,7 +25,7 @@ Mara [@mara85kh] (https://github.com/mara85kh)
 
 # Graphic Guideline #
 
-![Graphism](https://cdn.discordapp.com/attachments/960446517875970048/961555877431742464/Capture_decran_2022-04-06_a_11.04.20.png)
+![Graphic Guideline](https://media.discordapp.net/attachments/960446517875970048/961566229552857118/Capture_decran_2022-04-07_a_11.58.17.png?width=2160&height=582)
 
 # Project Management #
 
@@ -39,5 +39,25 @@ TBC
 
 ![](img/it-crowd-chris-o-dowd.gif)
 
+# ENV & API Guidelines #
 
 Based on wireframe, context of the work, 
+
+In all environments, the following files are loaded if they exist,
+the latter taking precedence over the former:
+
+  * .env                contains default values for the environment variables needed by the app
+  * .env.local          uncommitted file with local overrides
+  * .env.$APP_ENV       committed environment-specific defaults
+  * .env.$APP_ENV.local uncommitted environment-specific overrides
+
+ Real environment variables win over .env files.
+
+ DO NOT DEFINE PRODUCTION SECRETS IN THIS FILE NOR IN ANY OTHER COMMITTED FILES.
+
+ Run "composer dump-env prod" to compile .env files for production use (requires symfony/flex >=1.2).
+ https://symfony.com/doc/current/best_practices.html#use-environment-variables-for-infrastructure-configuration
+
+
+
+*Made with love at BeCode.Org, Charleroi 2022*
